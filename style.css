@@ -1,85 +1,116 @@
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo_Marcelly</title>
-    <link rel="stylesheet" href="./style.css">
 
-    </head>
-    <body>
+/* ======== ESTILO BASE DO SITE ======== */
+body {
+  font-family: Arial, sans-serif;   /* Fonte padrão usada em toda a página */
+  background-color: #f4f4f4;        /* Cor de fundo cinza claro */
+  margin: 0;                        /* Remove a margem padrão do navegador */
+  padding: 0;                       /* Remove o espaçamento interno padrão */
+}
 
-    <div class = "container">
-    <div class = "header">
-        <img src="./assets/images/images.jpg"  alt="snoop">
-        <h1>Marcelly Arcanjo</h1>
-        <p>Brasileira, 30 anos</p>
-        <p>Recife – PE</p>
-        <p>📞 (81) 9 99959-5578 | ✉ marcellyarcanjo7.gmail.com</p>
-    <p>
-    <a href="https://www.linkedin.com/in/marcelly-arcanjo" target="_blank">LinkedIn</a> |
-    <a href="https://buscatextual.cnpq.br/buscatextual/visualizacv.do?id=K8701926U4&tokenCaptchar=0cAFcWeA5aEwmu1BmuZqCXCl1_jSjOblnpSZvL7V9_ZcfhEXTqvIuE8LKgqQX_EOhpBgGANY9GryAeQinBUA0XcDRQRmiubazCK2XTwRqfULnuaYFMkyi-2XJo2eFnfZqXE4uioW1lwkokYP4DdFt3L6liO2NUOw-yqomQUq3lPoWEAWm5UZWRWjUcZeHN5gQtkHrDWk-_2EB-PDE1MIGnUjxUz-AjBEfubQa5wAEsHBdXMiJU39xIdZv_rzVD35Mk6r19Me-ZHeLJXBaiNiUURWh4ppU3pa7dRAYBxW165fbCVSZzeKA_2I5upnRuMvkA8ZlLrb9XxSMl2cx2dJCtvjnWyNOF4EIIUqgeNDxSJLrqFxBctAfbWGsCREiYTWOcuTfeUx6FCMtbDO9zG-6vi2S2lbrNPCS2MSZy7qnq2zF6oGo2LA_tKWkObQJLCzjbC5zhdOGXuB5Bq1bejoXVpqLckqy4ouxg9_z0ss4ymcQSnGsE7wzjtBtyHhTMbjaGi0JRYpUki_Zhf2US92DlqQp7l-xd1UY6ni-yW0OcgaovlgT0Js5dUrRLU7q-9Q5BlEsuLiCTxyaZmqXdAr3uHltmw2_aqAfF4cRFM_xOSygI4XhBsFgTNwy3v_43wHfB0mzKsjH50wg-3_E20pC2xj45gzULY8nmLyVi2-imG4uUrgZ1I8_hEQqUI7xZcFaKHHstzwALVrPr-uSnKJZ0LJvT6txDTRBBZSDZh1Lpk3FETDkg7FxhxHAY8LslIDiPNVHLH1Z4uXJhcaaGp0Fcu0GThJqkWgnZVQ"  target="_blank">Currículo Lattes</a> |
-    <a href="https://github.com/arcmarcelly"  target="_blank">GitHub</a>
-    </p>
-    </div>
-    <!-- Perfil -->
-    <h2>Perfil</h2>
-    <p>Seu perfil profissional em 3–5 linhas. Fale sobre suas áreas de interesse, principais habilidades e objetivos de carreira.</p>
+/* ======== CONTAINER PRINCIPAL ======== */
+.container {
+  max-width: 900px;                 /* Largura máxima do currículo = 900px */
+  margin: 40px auto;                /* 40px em cima/baixo + auto nas laterais -> centraliza no meio */
+  background: #fff;                 /* Fundo branco dentro do cartão */
+  padding: 30px;                    /* Espaço interno para afastar o texto da borda */
+  box-shadow: 0 4px 10px rgba(0,0,0,.1); /* Sombra leve embaixo do container */
+  border-radius: 10px;              /* Bordas arredondadas */
+}
 
-    <!-- Formação -->
-    <h2>Formação</h2>
-    <ul>
-    <li>Análise e Desenvolvimento de Sistemas – SENAC Pernambuco (2025 – Cursando)</li>
-    <li>Técnico em Eletrônica – IFPE (2016 – 2018)</li>
-    <li>Técnico em Automação Industrial – SENAI (2012 – 2013)</li>
-    </ul> 
+/* ======== CABEÇALHO (foto + nome + contatos) ======== */
+.header {
+  text-align: center;               /* Centraliza todo o conteúdo dentro do cabeçalho */
+  margin-bottom: 20px;              /* Espaço abaixo do cabeçalho */
+}
 
-    <!-- Experiência Profissional -->
-    <h2>Experiência Profissional</h2>
-    <ul>
-    <li><b>Seu Cargo</b> – Nome da Empresa (MMM/AAAA – MMM/AAAA)</li>
-    <li><b>Seu Cargo</b> – Nome da Empresa (MMM/AAAA – Atual)</li>
-    </ul>
+/* Estilo da foto do perfil */
+.header img {
+  width: 150px;                     /* Largura da foto */
+  height: 150px;                    /* Altura da foto */
+  object-fit: cover;                /* Mantém a proporção da foto sem distorcer */
+  border-radius: 50%;               /* Transforma a foto em um círculo */
+  border: 3px solid #2b6cb0;        /* Borda azul ao redor da foto */
+}
 
-    <!-- Projetos -->
-    <h2>Projetos</h2>
-    <ul>
-    <li><b>Nome do Projeto</b> (AAAA) – Breve descrição, tecnologias usadas e seu papel.</li>
-    <li><b>Outro Projeto</b> (AAAA) – O que foi feito, impacto e stack.</li>
-    </ul>
+/* Nome principal (H1) */
+.header h1 {
+  margin: 15px 0 5px;               /* Espaço em cima (15px), embaixo (5px) */
+  color: #2b6cb0;                   /* Cor azul do título */
+}
 
-    <!-- Qualificações -->
-    <h2>Qualificações</h2>
-    <ul>
-    <li>Habilidade/Competência 1</li>
-    <li>Habilidade/Competência 2</li>
-    <li>Habilidade/Competência 3</li>
-    </ul>
+/* Informações do cabeçalho (idade, cidade, contato) */
+.header p {
+  margin: 2px 0;                    /* Espaçamento pequeno entre as linhas */
+  color: #555;                      /* Cor cinza escuro para o texto */
+}
 
-    <!-- Idiomas -->
-    <h2>Idiomas</h2>
-    <ul>
-    <li>Inglês – Nível (ex.: B2)</li>
-    <li>Outro Idioma – Nível</li>
-    </ul>
+/* ======== TÍTULOS DE SEÇÃO (H2) ======== */
+h2 {
+  color: #2b6cb0;                   /* Cor azul do título */
+  border-bottom: 2px solid #2b6cb0; /* Linha azul logo abaixo do título */
+  padding-bottom: 5px;              /* Espaço entre o texto e a linha */
+  margin-top: 30px;                 /* Espaço acima de cada seção */
+}
 
-    <!-- Informações Adicionais -->
-    <h2>Informações Adicionais</h2>
-    <ul>
-    <li>Tecnologias: HTML, CSS, JavaScript, Python, …</li>
-    <li>Ferramentas: Pacote Office, Git, Figma, …</li>
-    <li>Outros: Edição de imagens, participação em eventos, voluntariado, …</li>
-    </ul>
+/* ======== TEXTO (parágrafos e itens de lista) ======== */
+p,
+li {
+  text-align: justify;              /* Texto justificado (alinha dos dois lados) */
+  line-height: 1.6;                 /* Aumenta o espaçamento entre linhas -> melhora leitura */
+}
 
+/* ======== LISTAS ======== */
+ul {
+  list-style: none;                 /* Remove os marcadores padrão (bolinha preta) */
+  padding: 0;                       /* Remove espaçamento interno da lista */
+}
 
+/* Criação de marcadores personalizados */
+ul li::before {
+  content: "• ";                    /* Insere uma bolinha manualmente antes de cada item */
+  color: #2b6cb0;                   /* Define a cor da bolinha (azul) */
+  font-weight: bold;                /* Deixa a bolinha mais grossa/forte */
+}
 
-    </div>
+#bnt-print{
+  background-color: #2b6cb0;
+  color: white;
+  border:none;
+  padding: 10px 20px;
+  cursor:pointer;
+  font-size: 16px; 
+  border-radius: 20px;
+}
 
-    <div class="button">
-     <button id="bnt-print">Salvar</button>   
-     <!-- <button id="bnt-print-2">Imprimir</button>    -->
-    </div>
+/* #bnt-print-2{
+  background-color: #2b6cb0;
+  color: white;
+  border:none;
+  padding: 10px 20px;
+  cursor:pointer;
+  font-size: 16px; 
+  border-radius: 20px;
+} */
 
-    <script src="./script.js"></script>
-    </body>
-    </html>
+.button{
+  display: flex;
+  justify-content: end;
+  margin-bottom: 10px;
+  padding: 10px;
+  /* gap: 5px; */
+  }
+
+#bnt-print:hover{
+  background-color: #555;
+}
+/* 
+#bnt-print-2:hover{
+  background-color: #555;
+} */
+
+@media print{
+#bnt-print{
+  display:none;
+  visibility: hidden;
+}
+}
